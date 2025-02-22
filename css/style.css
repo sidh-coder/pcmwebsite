@@ -37,13 +37,16 @@ header h1 {
 /* Navigation links */
 nav {
   display: flex;
-  gap: 15px; /* Alternatively, use margin-right in nav a */
+  flex-wrap: wrap; /* Allows items to wrap to a new line */
+  justify-content: center; /* Centers items if desired */
 }
 
 nav a {
-  color: white;
+  padding: 0.5rem 1rem;
   text-decoration: none;
+  color: #000; /* Adjust as needed */
 }
+
 
 nav a:hover {
   text-decoration: underline;
