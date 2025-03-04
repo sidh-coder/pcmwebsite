@@ -17,7 +17,7 @@ header {
 
 /* Logo */
 .logo {
-  width: 250px; /* Adjust as needed */
+  width: 250px; /* Keep logo size unchanged */
   height: auto;
   margin-right: 15px;
 }
@@ -37,16 +37,15 @@ header h1 {
 /* Navigation links */
 nav {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to a new line */
-  justify-content: center; /* Centers items if desired */
+  flex-wrap: wrap; /* Allows items to wrap if needed */
+  justify-content: center; /* Centers items */
 }
 
 nav a {
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #000; /* Adjust as needed */
+  color: #000;
 }
-
 
 nav a:hover {
   text-decoration: underline;
@@ -84,7 +83,7 @@ footer p {
 }
 
 footer a {
-  color: #ffeb3b; /* Bright color for contrast */
+  color: #ffeb3b;
   text-decoration: none;
 }
 
@@ -97,6 +96,7 @@ img {
   display: block;
   margin: 1rem 0;
 }
+
 /* General styling for the gallery page */
 .gallery {
   padding: 2rem;
@@ -118,8 +118,29 @@ img {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Active nav styling, similar to your about.html */
+/* Active nav styling */
 nav ul li a.active {
   font-weight: bold;
-  color: #007BFF; /* or your site's accent color */
+  color: #007BFF;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;       /* Center them horizontally */
+  }
+  
+  .header-text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  nav {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
 }
